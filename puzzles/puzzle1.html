@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Puzzle One</title>
+<h1>Puzzle One</h1>
+<script language="JavaScript"> 
+function testResults (form) {
+    var answer = form.inputbox.value;
+		if(answer==123){
+			window.location.replace("https://puumpkin.github.io/puzzles/puzzle2.html");
+		}
+    alert ("INCORRECT");
+}
+</script>
+</head>
 <body>
-	<h1>Puzzle One</h1>
-<p>story text here...</p><br>
-<form action="/puzzles/puzzle2.html">
-  <label for="code1">Code:</label><br>
-  <input type="text" id="code1" name="code1"><br>
- 	<input type="submit" value="Submit">
+<form name="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+<input TYPE="text" NAME="inputbox" VALUE=""><P>
+<input TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
 </form>
 </body>
 </html>
