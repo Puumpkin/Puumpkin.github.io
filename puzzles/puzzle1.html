@@ -3,21 +3,23 @@
 <head>
 <title>Puzzle One</title>
 <h1>Puzzle One</h1>
-<p>story text here...</p><br>
 <script language="JavaScript"> 
 function testResults (form) {
     var answer = form.inputbox.value;
 		if(answer==123){
 			window.location.replace("https://puumpkin.github.io/puzzles/puzzle2.html");
 		}
-    alert ("INCORRECT");
+	else{
+		    alert ("INCORRECT");
+	}
+
 }
 </script>
 </head>
 <body>
-<form name="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
-<input TYPE="text" NAME="inputbox" VALUE=""><P>
-<input TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+<form name="myform" action="" method="get">Enter something in the box: <BR>
+<input type="text" name="inputbox" value=""><P>
+<input type="button" name="button" value="Click" onClick="testResults(this.form)">
 </form>
 </body>
 </html>
