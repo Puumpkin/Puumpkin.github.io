@@ -7,7 +7,7 @@
 <script language="JavaScript">
 function testResults (form) {
     var answer = form.inputbox.value;
-		if(answer==WODV||answer==wodv){
+		if(answer=="WODV"||answer=="wodv"){
 			window.location.replace("https://puumpkin.github.io/puzzles/puzzle3.html");
 		}
 	else{
@@ -18,7 +18,7 @@ function testResults (form) {
 </head>
   <body>
     <span style="position: fixed; width: 100%; left: 0; padding:10px 10px 10px 0px; bottom: 0; background-color: grey;">　Made by Matteo Guzman</span>
-    <form name="myform" autocomplete="off" method="get">Enter the code: <BR>
+      <form name="myform" action="#" autocomplete="off" method="get">Enter the code: <BR>
       <input type="text" name="inputbox" value=""><P>
       <input type="button" name="button" value="Submit" onClick="testResults(this.form)">
     </form>
